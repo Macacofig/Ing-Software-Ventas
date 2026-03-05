@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "bdf10b1de5c4a6a3a6636a04f1845c868a27e497",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-05T13:29:57.000Z",
       "message": "feat: calculate total price with quantity and price",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/bdf10b1de5c4a6a3a6636a04f1845c868a27e497"
     },
     "stats": {
       "total": 20,
       "additions": 17,
       "deletions": 3,
+      "date": "2026-03-05"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-05T13:37:42.000Z",
+      "message": "feat: presenter calc total price with real inputs",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 15,
+      "deletions": 15,
       "date": "2026-03-05"
     },
     "coverage": 100,
