@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "28df06c3ee98ad45eda22f476bf38ea7d1b9c72a",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-05T13:37:42.000Z",
       "message": "feat: presenter calc total price with real inputs",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/28df06c3ee98ad45eda22f476bf38ea7d1b9c72a"
     },
     "stats": {
       "total": 30,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-05T14:05:27.000Z",
+      "message": "feat: Calc total price with taxe",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 18,
+      "deletions": 2,
+      "date": "2026-03-05"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
