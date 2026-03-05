@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6ecf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  background: #ffffff;
+  width: 360px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario .campo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario label {
+  font-weight: 600;
+  color: #555555;
+}
+
+.formulario input {
+  width: 140px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: right;
+  background-color: #fdfdfd;
+  transition: 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30,144,255,0.3);
+  outline: none;
+}
+
+.boton {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.calcular {
+  width: 40%;
+  padding: 10px 0;
+  background-color: #2379d0;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calcular:hover {
+  background-color: #187bcd;
+  transform: translateY(-2px);
+}
+
+
+.resultados {
+  margin-top: 25px;
+  width: 100%;
+  border-top: 1.5px solid #eee;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resultado {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #333333;
+}
+
+.resultado.total {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1e90ff;
+}
