@@ -9,9 +9,9 @@
 
 <div class="contenedor">
 
-<h2>Calculadora de Precio</h2>
+  <h2>Calculadora de Precio</h2>
 
-<div class="formulario">
+<form id="formulario" class="formulario">
   <div class="campo">
     <label>Cantidad de item:</label>
     <input type="text" id="cantidad" name="cantidad">
@@ -28,26 +28,28 @@
   </div> -->
 
   <div class="boton">
-    <button class="calcular" >Calcular</button>
+    <button type="submit" class="calcular" id="botonCalcular">Calcular</button>
   </div>
-</div>
+</form>
 
-<div class="resultados">
-  <div class="resultado">
-    <span>Precio neto :</span>
+
+
+  <div class="resultados">
+    <div class="resultado">
+      <span>Precio neto :</span>
+    </div>
+    <!-- <div class="resultado">
+      <span>Descuento :</span>
+    </div>
+    <div class="resultado">
+      <span>Impuesto :</span>
+    </div> -->
+    <div class="resultado total">
+      <span>Precio total: <span id="total">0</span></span>
+    </div>
   </div>
-  <!-- <div class="resultado">
-    <span>Descuento :</span>
-  </div>
-  <div class="resultado">
-    <span>Impuesto :</span>
-  </div> -->
-  <div class="resultado total">
-    <span>Precio total: </span>
-  </div>
-</div>
 
 </div>
-
+  <script type="module" src="src/ventas/presenter-ventas.js"></script>
 </body>
 </html>
