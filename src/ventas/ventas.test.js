@@ -16,4 +16,7 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un descuento del 5% cantidad >= 3000 <= 6999', () => {
     expect(calcularDescuentos(3000,200)).toEqual(570000);
   });
+  it('Deberia mostrar total con un descuento del 7% cantidad >= 7000 <= 9999', () => {
+    expect(calcularDescuentos(7000,300)).toEqual(1953000);
+  });
 });

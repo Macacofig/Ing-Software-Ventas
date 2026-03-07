@@ -25,10 +25,13 @@ form.addEventListener("submit", (event) => {
 
   // mostrar porcentaje
   if (cantidadPresenter >= 1000 && cantidadPresenter <= 2999) {
-    tipoDescuento.textContent = "3%";
+  tipoDescuento.textContent = "3%";
   } 
-  if (cantidadPresenter >= 3000 && cantidadPresenter <= 6999 ){
+  else if (cantidadPresenter >= 3000 && cantidadPresenter <= 6999){
     tipoDescuento.textContent = "5%";
+  }
+  else if (cantidadPresenter >= 7000 && cantidadPresenter <= 9999){
+    tipoDescuento.textContent = "7%";
   }
   else {
     tipoDescuento.textContent = "0%";

@@ -190,9 +190,103 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8b986f3d327668b8719f3a96ada05640b51bd28f",
     "commitName": "feat: implementacion de descuento 5% >3000 <6999",
     "commitTimestamp": 1772913281407,
     "testId": 5
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1772913541910,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1772913757010,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1772913793307,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914484413,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914499532,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914531740,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914577880,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914600925,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1772914621026,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1772914730373,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1772915070668,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion de descuento 7% >7000 <9999",
+    "commitTimestamp": 1772915224969,
+    "testId": 6
   }
 ]

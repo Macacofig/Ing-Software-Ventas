@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8b986f3d327668b8719f3a96ada05640b51bd28f",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-07T19:54:40.000Z",
       "message": "feat: implementacion de descuento 5% >3000 <6999",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/8b986f3d327668b8719f3a96ada05640b51bd28f"
     },
     "stats": {
       "total": 14,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-07T20:27:04.000Z",
+      "message": "feat: implementacion de descuento 7% >7000 <9999",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 12,
+      "deletions": 2,
+      "date": "2026-03-07"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
