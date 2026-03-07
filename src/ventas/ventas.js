@@ -15,4 +15,17 @@ function calcularTotalImpuesto(cantidad, precio, estado)
     calc = cantidad * precio * porcentajeimpuesto
     return (cantidad * precio) + calc ;
 }
-export {calcularTotal, calcularTotalImpuesto};
+
+function calcularDescuentos(cantidad, precio) {
+  const total = cantidad * precio;
+  let descuento = 0;
+
+  if (cantidad >= 1000 && cantidad <= 2999) {
+    descuento = 0.03;
+  }
+
+  const montoDescuento = total * descuento;
+  return total - montoDescuento;
+}
+
+export {calcularTotal, calcularTotalImpuesto, calcularDescuentos};

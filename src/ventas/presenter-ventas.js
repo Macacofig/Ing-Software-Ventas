@@ -1,23 +1,34 @@
-import { calcularTotalImpuesto } from "./ventas.js";
+import { calcularTotal, calcularDescuentos } from "./ventas.js";
 
 const form = document.getElementById("formulario");
 const cantidad = document.getElementById("cantidad");
 const precio = document.getElementById("precio");
-const estado = document.getElementById("estados");
-const preciototal = document.getElementById("total");
+
+const precioNeto = document.getElementById("precioNeto");
+const totalConDescuento = document.getElementById("totalConDescuento");
+const tipoDescuento = document.getElementById("tipoDescuento");
+const total = document.getElementById("total");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const cantidadPresenter = parseFloat(cantidad.value);
   const precioPresenter = parseFloat(precio.value);
-  const estadoPresenter = estado.value;
 
-  const total = calcularTotalImpuesto(
-    cantidadPresenter,
-    precioPresenter,
-    estadoPresenter
-  );
+  // precio neto
+  const neto = calcularTotal(cantidadPresenter, precioPresenter);
+  precioNeto.textContent = neto;
 
-  preciototal.textContent = total;
+  // total con descuento
+  const conDescuento = calcularDescuentos(cantidadPresenter, precioPresenter);
+  totalConDescuento.textContent = conDescuento;
+
+  // mostrar porcentaje
+  if (cantidadPresenter >= 1000 && cantidadPresenter <= 2999) {
+    tipoDescuento.textContent = "3%";
+  } else {
+    tipoDescuento.textContent = "0%";
+  }
+
+  total.textContent = conDescuento;
 });

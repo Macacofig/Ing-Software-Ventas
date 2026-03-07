@@ -146,9 +146,23 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e0875bbd28cb844a2e79acc7732f8e91eb6b3458",
     "commitName": "feat: implementacion de estados de UT",
     "commitTimestamp": 1772908101181,
     "testId": 3
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1772910826897,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion de descuento 3% >1000 <2999",
+    "commitTimestamp": 1772910892836,
+    "testId": 4
   }
 ]

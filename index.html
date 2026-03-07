@@ -25,6 +25,7 @@
   <div class="campo">
     <label>Código de estado:</label>
     <select id="estados" name="estados">
+      <option value="" disabled selected>Escoge estado</option>
       <option value="UT">UT</option>
     </select>
   </div>
@@ -36,14 +37,18 @@
 
   <div class="resultados">
     <div class="resultado">
-      <span>Precio neto :</span>
+      <span>Precio neto : <span id="precioNeto">0</span></span>
     </div>
-    <!-- <div class="resultado">
-      <span>Descuento :</span>
-    </div>
+
     <div class="resultado">
-      <span>Impuesto :</span>
-    </div> -->
+      <span>Descuento (<span id="tipoDescuento">0%</span>) :
+      <span id="totalConDescuento">0</span></span>
+    </div>
+    
+    <div class="resultado">
+      <span>Impuesto : <span id="impuesto">0</span></span>
+    </div>
+
     <div class="resultado total">
       <span>Precio total: <span id="total">0</span></span>
     </div>
