@@ -28,7 +28,7 @@ form.addEventListener("submit", (event) => {
     tipoDescuento.textContent = "0%";
   }
   if (cantidadPresenter >= 1000 && cantidadPresenter <= 2999) {
-  tipoDescuento.textContent = "3%";
+    tipoDescuento.textContent = "3%";
   } 
   if (cantidadPresenter >= 3000 && cantidadPresenter <= 6999){
     tipoDescuento.textContent = "5%";
@@ -39,6 +39,8 @@ form.addEventListener("submit", (event) => {
   if (cantidadPresenter >= 10000 && cantidadPresenter <= 29999){
     tipoDescuento.textContent = "10%";
   }
-
+  if (cantidadPresenter >= 30000){
+    tipoDescuento.textContent = "15%";
+  }
   total.textContent = conDescuento;
 });

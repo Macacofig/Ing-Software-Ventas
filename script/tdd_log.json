@@ -314,9 +314,31 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "542c59039279de881a27e0567da5c1b5b3e8a429",
     "commitName": "feat: implementacion de descuento 10% >10000 <29999",
     "commitTimestamp": 1772916112162,
     "testId": 7
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1772916371436,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1772916501124,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion de descuento 15% >30000",
+    "commitTimestamp": 1772916696261,
+    "testId": 8
   }
 ]

@@ -36,6 +36,10 @@ function calcularDescuentos(cantidad, precio) {
     descuento = 0.10;
   }
 
+  if(cantidad >= 30000) {
+    descuento = 0.15;
+  }
+
   const montoDescuento = total * descuento;
   return total - montoDescuento;
 }
