@@ -48,7 +48,8 @@ h2 {
   color: #555555;
 }
 
-.formulario input {
+.formulario input,
+.formulario select {
   width: 140px;
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -56,6 +57,11 @@ h2 {
   text-align: right;
   background-color: #fdfdfd;
   transition: 0.3s;
+}
+
+.formulario select {
+  text-align: left;
+  cursor: pointer;
 }
 
 .formulario input:focus {

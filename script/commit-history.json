@@ -38,18 +38,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a85af4ad4dd1c60d3dff800f70f4b25e84fd7345",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-05T14:05:27.000Z",
       "message": "feat: Calc total price with taxe",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/a85af4ad4dd1c60d3dff800f70f4b25e84fd7345"
     },
     "stats": {
       "total": 20,
       "additions": 18,
       "deletions": 2,
       "date": "2026-03-05"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-07T18:28:20.000Z",
+      "message": "feat: implementacion de estados de UT",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 22,
+      "deletions": 8,
+      "date": "2026-03-07"
     },
     "coverage": 100,
     "test_count": 2,

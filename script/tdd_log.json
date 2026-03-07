@@ -132,9 +132,23 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a85af4ad4dd1c60d3dff800f70f4b25e84fd7345",
     "commitName": "feat: Calc total price with taxe",
     "commitTimestamp": 1772719527766,
     "testId": 2
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1772907189980,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion de estados de UT",
+    "commitTimestamp": 1772908101181,
+    "testId": 3
   }
 ]
