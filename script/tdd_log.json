@@ -564,9 +564,31 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b6da408eb4edcf5db004d49dccea9378df444a77",
     "commitName": "feat: Calculo de categoria Bebidas Alcoholicas",
     "commitTimestamp": 1772993176889,
     "testId": 18
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1772993391756,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1772994189964,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo de categoria Material de escritorio",
+    "commitTimestamp": 1772994289367,
+    "testId": 19
   }
 ]

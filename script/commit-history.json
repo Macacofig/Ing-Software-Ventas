@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b6da408eb4edcf5db004d49dccea9378df444a77",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T18:06:16.000Z",
       "message": "feat: Calculo de categoria Bebidas Alcoholicas",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/b6da408eb4edcf5db004d49dccea9378df444a77"
     },
     "stats": {
       "total": 23,
@@ -357,6 +357,25 @@
     },
     "coverage": 100,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T18:24:48.000Z",
+      "message": "feat: Calculo de categoria Material de escritorio",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 27,
+      "deletions": 10,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

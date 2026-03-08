@@ -95,5 +95,10 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "7%";
     tipoImpuestocategoria.textContent = "0%";
   }
+  if(categoriaPresenter === 'Material de escritorio')
+  {
+    tipoDescuentocategoria.textContent = "0%";
+    tipoImpuestocategoria.textContent = "1.5%";
+  }
   total.textContent = totalcategoria[0];
 });

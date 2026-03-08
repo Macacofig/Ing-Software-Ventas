@@ -43,4 +43,7 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un calculo de Bebidas alcoholicas totalingresado', () => {
     expect(calcularCategoria(2000,'Bebidas alcoholicas')).toEqual([1860,140,0]);
   });
+  it('Deberia mostrar total con un calculo de Material de escritorio totalingresado', () => {
+    expect(calcularCategoria(2000,'Material de escritorio')).toEqual([2030,0,30]);
+  });
 });
