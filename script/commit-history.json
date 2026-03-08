@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5d116db474550ba6bdde3ddf192ae722b9ac26c8",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-08T15:02:45.000Z",
       "message": "style: poner como defecto CA en la caja de opciones de estado",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/5d116db474550ba6bdde3ddf192ae722b9ac26c8"
     },
     "stats": {
       "total": 4,
@@ -302,5 +302,24 @@
     "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T16:29:19.000Z",
+      "message": "fix: Agregado de decimales en las soluciones",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 7,
+      "deletions": 5,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

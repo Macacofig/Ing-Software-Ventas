@@ -7,7 +7,6 @@ function calcularTotalImpuesto(total, estado)
 {
     const estados = {'UT': 6.65/100, 'NV': 8/100, "TX": 6.25/100, "AL": 4/100, "CA": 8.25/100}
     let porcentajeimpuesto = 0;
-    let calc = 0;
     if(estado === 'UT')
     {
       porcentajeimpuesto = estados['UT']
@@ -28,8 +27,9 @@ function calcularTotalImpuesto(total, estado)
     {
       porcentajeimpuesto = estados['CA']
     }
-    calc = total * porcentajeimpuesto
-    return [parseInt(total + calc),parseInt(calc)] ;
+    let calc = total * porcentajeimpuesto
+    let totalconimpuesto = total + calc;
+    return [Number((totalconimpuesto).toFixed(2)),Number((calc).toFixed(2))] ;
 }
 
 function calcularDescuentos(cantidad, precio) {
@@ -57,7 +57,7 @@ function calcularDescuentos(cantidad, precio) {
   }
 
   const montoDescuento = total * descuento;
-  return [parseInt(total-montoDescuento),parseInt(montoDescuento)];
+  return [Number((total-montoDescuento).toFixed(2)),Number((montoDescuento).toFixed(2))];
 }
 
 export {calcularTotal, calcularTotalImpuesto, calcularDescuentos};

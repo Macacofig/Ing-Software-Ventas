@@ -482,9 +482,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5d116db474550ba6bdde3ddf192ae722b9ac26c8",
     "commitName": "style: poner como defecto CA en la caja de opciones de estado",
     "commitTimestamp": 1772982167972,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Agregado de decimales en las soluciones",
+    "commitTimestamp": 1772987360766,
+    "testId": 16
   }
 ]
