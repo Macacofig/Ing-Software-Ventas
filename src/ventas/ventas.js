@@ -165,6 +165,11 @@ function calcularPesoVolumetrico(total,cantidad,peso)
     agregado = 6.5 * cantidad;
     totalpeso = total + agregado;
   }
+  if(peso >= 101 && peso <= 200)
+  {
+    agregado = 8 * cantidad;
+    totalpeso = total + agregado;
+  }
   return [Number((totalpeso).toFixed(2)),Number((agregado).toFixed(2))];
 }
 
