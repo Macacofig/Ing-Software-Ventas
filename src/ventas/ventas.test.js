@@ -1,4 +1,4 @@
-import {calcularTotal, calcularTotalImpuesto , calcularDescuentos, calcularCategoria} from './ventas.js'
+import {calcularTotal, calcularTotalImpuesto , calcularDescuentos, calcularCategoria, calcularPesoVolumetrico} from './ventas.js'
 
 describe('Sistema de ventas', () => {
   it('Deberia mostrar 300 al ingresar cantidad = 100 y precio = 3', () => {
@@ -57,5 +57,10 @@ describe('Sistema de ventas', () => {
   });
   it('Deberia mostrar total con un calculo de Varios totalingresado', () => {
     expect(calcularCategoria(2000,'Varios')).toEqual([2000,0,0]);
+  });
+
+  /*-----PESO VOLUMETRICO-----*/
+  it('Deberia mostrar total con un calculo con peso 0 a 10', () => {
+      expect(calcularPesoVolumetrico(2000,20,8)).toEqual([2000,0]);
   });
 });

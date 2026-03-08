@@ -135,4 +135,17 @@ function calcularCategoria(total,categoria)
 
   return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];
 }
-export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria};
+
+function calcularPesoVolumetrico(total,cantidad,peso)
+{
+  let totalpeso;
+  let agregado;
+  if(peso >= 0 && peso <= 10)
+    {
+      agregado = 0 * cantidad;
+      totalpeso = total + agregado;
+    }
+  return [Number((totalpeso).toFixed(2)),Number((agregado).toFixed(2))];
+}
+
+export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria, calcularPesoVolumetrico};

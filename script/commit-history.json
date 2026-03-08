@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3ee5198a09afeb096da6b9de7a38d02d61aa2b85",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T19:28:34.000Z",
       "message": "refact: Acotacion de codigo, para mejor entendimiento",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/3ee5198a09afeb096da6b9de7a38d02d61aa2b85"
     },
     "stats": {
       "total": 14,
@@ -452,6 +452,25 @@
     },
     "coverage": 100,
     "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-08T21:27:32.000Z",
+      "message": "feat: Calculo del peso volumetrico 0-10",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 30,
+      "deletions": 3,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

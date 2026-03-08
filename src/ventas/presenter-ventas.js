@@ -1,10 +1,11 @@
-import { calcularTotal, calcularDescuentos, calcularTotalImpuesto, calcularCategoria } from "./ventas.js";
+import { calcularTotal, calcularDescuentos, calcularTotalImpuesto, calcularCategoria, calcularPesoVolumetrico } from "./ventas.js";
 
 const form = document.getElementById("formulario");
 const cantidad = document.getElementById("cantidad");
 const precio = document.getElementById("precio");
 const region = document.getElementById("estados");
 const categoria = document.getElementById("categorias");
+const pesovolumetrico = document.getElementById("pesovolumetrico");
 
 const precioNeto = document.getElementById("precioNeto");
 
@@ -12,6 +13,7 @@ const totalConDescuento = document.getElementById("totalConDescuento");
 const totalConImpuesto = document.getElementById("totalConImpuesto");
 const totalConDescuentocategoria = document.getElementById("totalConDescuentocategoria");
 const totalConImpuestocategoria = document.getElementById("totalConImpuestocategoria");
+const totalpesovolumetrico = document.getElementById("totalpesovolumetrico");
 
 const tipoDescuento = document.getElementById("tipoDescuento");
 const tipoImpuesto = document.getElementById("tipoImpuesto");
@@ -27,6 +29,7 @@ form.addEventListener("submit", (event) => {
   const precioPresenter = parseFloat(precio.value);
   const regionPresenter = region.value;
   const categoriaPresenter = categoria.value;
+  const pesovolumetricoPresenter = parseFloat(pesovolumetrico.value);
 
   // precio neto
   const neto = calcularTotal(cantidadPresenter, precioPresenter);
@@ -43,6 +46,9 @@ form.addEventListener("submit", (event) => {
   totalConDescuentocategoria.textContent = totalcategoria[1];
   totalConImpuestocategoria.textContent = totalcategoria[2];
 
+  const totalypeso = calcularPesoVolumetrico(totalcategoria[0],cantidadPresenter, pesovolumetricoPresenter);
+  totalpesovolumetrico.textContent = totalypeso[1];
+  total.textContent = totalypeso[0];
   // mostrar porcentaje
   if (neto <= 1000){
     tipoDescuento.textContent = "0%";
