@@ -1,12 +1,14 @@
-import { calcularTotal, calcularDescuentos } from "./ventas.js";
+import { calcularTotal, calcularDescuentos, calcularTotalImpuesto } from "./ventas.js";
 
 const form = document.getElementById("formulario");
 const cantidad = document.getElementById("cantidad");
 const precio = document.getElementById("precio");
-
+const region = document.getElementById("estados");
 const precioNeto = document.getElementById("precioNeto");
 const totalConDescuento = document.getElementById("totalConDescuento");
+const totalConImpuesto = document.getElementById("totalConImpuesto");
 const tipoDescuento = document.getElementById("tipoDescuento");
+const tipoImpuesto = document.getElementById("tipoImpuesto");
 const total = document.getElementById("total");
 
 form.addEventListener("submit", (event) => {
@@ -14,7 +16,7 @@ form.addEventListener("submit", (event) => {
 
   const cantidadPresenter = parseFloat(cantidad.value);
   const precioPresenter = parseFloat(precio.value);
-
+  const regionPresenter = region.value;
   // precio neto
   const neto = calcularTotal(cantidadPresenter, precioPresenter);
   precioNeto.textContent = neto;
@@ -22,6 +24,9 @@ form.addEventListener("submit", (event) => {
   // total con descuento
   const totalydescuento = calcularDescuentos(cantidadPresenter, precioPresenter);
   totalConDescuento.textContent = totalydescuento[1];
+
+  const totalyimpuestos = calcularTotalImpuesto(totalydescuento[0],regionPresenter);
+  totalConImpuesto.textContent = totalyimpuestos[1];
 
   // mostrar porcentaje
   if (neto <= 1000){
@@ -42,5 +47,9 @@ form.addEventListener("submit", (event) => {
   if (neto >= 30000){
     tipoDescuento.textContent = "15%";
   }
-  total.textContent = totalydescuento[0];
+  if (regionPresenter == 'UT')
+  {
+    tipoImpuesto.textContent = "6.25%";
+  }
+  total.textContent = totalyimpuestos[0];
 });

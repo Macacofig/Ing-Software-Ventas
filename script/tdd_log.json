@@ -366,9 +366,23 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3f95c0ecd0894d2ed8494be4105515ce50a08de2",
     "commitName": "fix: arreglo para la funcion descuento",
     "commitTimestamp": 1772954169634,
     "testId": 9
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1772958232145,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: Visual para impuesto UT",
+    "commitTimestamp": 1772958819321,
+    "testId": 10
   }
 ]

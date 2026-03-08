@@ -3,7 +3,7 @@ function calcularTotal(cantidad, precio)
     return cantidad * precio;
 }
 
-function calcularTotalImpuesto(cantidad, precio, estado)
+function calcularTotalImpuesto(total, estado)
 {
     const estados = {'UT': 6.65/100}
     let porcentajeimpuesto = 0;
@@ -12,8 +12,8 @@ function calcularTotalImpuesto(cantidad, precio, estado)
     {
         porcentajeimpuesto = estados['UT']
     }
-    calc = cantidad * precio * porcentajeimpuesto
-    return (cantidad * precio) + calc ;
+    calc = total * porcentajeimpuesto
+    return [parseInt(total + calc),parseInt(calc)] ;
 }
 
 function calcularDescuentos(cantidad, precio) {

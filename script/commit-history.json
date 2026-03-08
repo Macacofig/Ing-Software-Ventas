@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3f95c0ecd0894d2ed8494be4105515ce50a08de2",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T07:16:08.000Z",
       "message": "fix: arreglo para la funcion descuento",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/3f95c0ecd0894d2ed8494be4105515ce50a08de2"
     },
     "stats": {
       "total": 42,
@@ -188,5 +188,24 @@
     "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T08:33:38.000Z",
+      "message": "style: Visual para impuesto UT",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 19,
+      "deletions": 9,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 7,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

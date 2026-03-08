@@ -6,7 +6,7 @@ describe('Sistema de ventas', () => {
   });
   /*------IMPUESTOS------*/
   it('Deberia mostrar al ingresar cantidad = 400, precio = 100 y estado = UT', () => {
-    expect(calcularTotalImpuesto(400,10,'UT')).toEqual(4266);
+    expect(calcularTotalImpuesto(4000,'UT')).toEqual(4266);
   });
   
   /*-----DESCUENTOS-----*/
