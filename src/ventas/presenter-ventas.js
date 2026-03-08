@@ -61,5 +61,9 @@ form.addEventListener("submit", (event) => {
   {
     tipoImpuesto.textContent = "6.25%";
   }
+  if (regionPresenter == 'AL')
+  {
+    tipoImpuesto.textContent = "4%";
+  }
   total.textContent = totalyimpuestos[0];
 });

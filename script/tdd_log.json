@@ -432,9 +432,31 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bb323b6f87467223f986124013205f7091a017da",
     "commitName": "feat: Calculo con impuesto TX",
     "commitTimestamp": 1772959597948,
     "testId": 12
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1772959790616,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1772959904800,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo con impuesto AL",
+    "commitTimestamp": 1772960185433,
+    "testId": 13
   }
 ]
