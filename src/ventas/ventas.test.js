@@ -46,4 +46,10 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un calculo de Material de escritorio totalingresado', () => {
     expect(calcularCategoria(2000,'Material de escritorio')).toEqual([2030,0,30]);
   });
+  it('Deberia mostrar total con un calculo de Muebles totalingresado', () => {
+    expect(calcularCategoria(2000,'Muebles')).toEqual([1940,60,0]);
+  });
+  it('Deberia mostrar total con un calculo de Electronicos totalingresado', () => {
+    expect(calcularCategoria(2000,'Electronicos')).toEqual([1939.2,80,19.2]);
+  });
 });

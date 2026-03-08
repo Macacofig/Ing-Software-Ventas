@@ -100,5 +100,10 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "0%";
     tipoImpuestocategoria.textContent = "1.5%";
   }
+  if(categoriaPresenter === 'Electronicos')
+  {
+    tipoDescuentocategoria.textContent = "4%";
+    tipoImpuestocategoria.textContent = "1%";
+  }
   total.textContent = totalcategoria[0];
 });

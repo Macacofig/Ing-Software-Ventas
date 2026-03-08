@@ -586,9 +586,55 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9dba358c1481a9c8c73ac20fcd5b0d0d0ad6148a",
     "commitName": "feat: Calculo de categoria Material de escritorio",
     "commitTimestamp": 1772994289367,
     "testId": 19
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1772994574517,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1772994658347,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 1,
+    "numTotalTests": 16,
+    "timestamp": 1772994939372,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 1,
+    "numTotalTests": 16,
+    "timestamp": 1772994981752,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1772995016951,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo de categoria Electronicos",
+    "commitTimestamp": 1772995186941,
+    "testId": 20
   }
 ]

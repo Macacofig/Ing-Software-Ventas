@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9dba358c1481a9c8c73ac20fcd5b0d0d0ad6148a",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T18:24:48.000Z",
       "message": "feat: Calculo de categoria Material de escritorio",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/9dba358c1481a9c8c73ac20fcd5b0d0d0ad6148a"
     },
     "stats": {
       "total": 37,
@@ -376,6 +376,25 @@
     },
     "coverage": 100,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T18:39:46.000Z",
+      "message": "feat: Calculo de categoria Electronicos",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 30,
+      "deletions": 2,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -65,7 +65,9 @@ function calcularCategoria(total,categoria)
   const categorias = {
     'Alimentos':{'descuento': 0,'impuesto': 2/100}, 
     'Bebidas alcoholicas': {'descuento': 7/100,'impuesto': 0},
-    'Material de escritorio': {'descuento': 0,'impuesto': 1.5/100}
+    'Material de escritorio': {'descuento': 0,'impuesto': 1.5/100},
+    'Muebles': {'descuento': 3/100,'impuesto': 0},
+    'Electronicos': {'descuento': 4/100,'impuesto': 1/100},
   }
   let descuentoAplicar;
   let impuestoAplicar;
@@ -89,6 +91,20 @@ function calcularCategoria(total,categoria)
     descuentoAplicar = total * categorias['Material de escritorio']['descuento'];
     totalcompleto = total - descuentoAplicar;
     impuestoAplicar = totalcompleto * categorias['Material de escritorio']['impuesto'];
+    totalcompleto = totalcompleto + impuestoAplicar;
+  }
+  if(categoria === 'Muebles')
+  {
+    descuentoAplicar = total * categorias['Muebles']['descuento'];
+    totalcompleto = total - descuentoAplicar;
+    impuestoAplicar = totalcompleto * categorias['Muebles']['impuesto'];
+    totalcompleto = totalcompleto + impuestoAplicar;
+  }
+  if(categoria === 'Electronicos')
+  {
+    descuentoAplicar = total * categorias['Electronicos']['descuento'];
+    totalcompleto = total - descuentoAplicar;
+    impuestoAplicar = totalcompleto * categorias['Electronicos']['impuesto'];
     totalcompleto = totalcompleto + impuestoAplicar;
   }
   return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];
