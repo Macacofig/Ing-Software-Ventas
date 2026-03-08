@@ -1,4 +1,4 @@
-import {calcularTotal, calcularTotalImpuesto , calcularDescuentos} from './ventas.js'
+import {calcularTotal, calcularTotalImpuesto , calcularDescuentos, calcularCategoria} from './ventas.js'
 
 describe('Sistema de ventas', () => {
   it('Deberia mostrar 300 al ingresar cantidad = 100 y precio = 3', () => {
@@ -18,24 +18,26 @@ describe('Sistema de ventas', () => {
     expect(calcularTotalImpuesto(4000,'AL')).toEqual([4160,160]);
   });
   it('Deberia mostrar 16237 al ingresar cantidad = 150, precio = 100, estado = CA', () => {
-    expect(calcularTotalImpuesto(15000,'CA')).toEqual([16237,1237]);
+    expect(calcularTotalImpuesto(15000,'CA')).toEqual([16237.5,1237.5]);
   });
   /*-----DESCUENTOS-----*/
-  it('Deberia mostrar total con un descuento del 3% cantidad >= 1000 <= 2999', () => {
+  it('Deberia mostrar total con un descuento del 3% totalingresado >= 1000 <= 2999', () => {
     expect(calcularDescuentos(100,15)).toEqual([1455,45]);
   });
-  it('Deberia mostrar total con un descuento del 5% cantidad >= 3000 <= 6999', () => {
+  it('Deberia mostrar total con un descuento del 5% totalingresado >= 3000 <= 6999', () => {
     expect(calcularDescuentos(3000,2)).toEqual([5700,300]);
   });
-  it('Deberia mostrar total con un descuento del 7% cantidad >= 7000 <= 9999', () => {
+  it('Deberia mostrar total con un descuento del 7% totalingresado >= 7000 <= 9999', () => {
     expect(calcularDescuentos(1000,7)).toEqual([6510,490]);
   });
-  it('Deberia mostrar total con un descuento del 10% cantidad >= 10000 <= 29999', () => {
+  it('Deberia mostrar total con un descuento del 10% totalingresado >= 10000 <= 29999', () => {
     expect(calcularDescuentos(1000,10)).toEqual([9000,1000]);
   });
-  it('Deberia mostrar total con un descuento del 15% cantidad >= 30000', () => {
+  it('Deberia mostrar total con un descuento del 15% totalingresado >= 30000', () => {
     expect(calcularDescuentos(2000,20)).toEqual([34000,6000]);
   });
-
-
+  /*-----CATEGORIA-----*/
+  it('Deberia mostrar total con un calculo de Aliento totalingresado', () => {
+    expect(calcularCategoria(2000,'Alimentos')).toEqual([2040,0,40]);
+  });
 });

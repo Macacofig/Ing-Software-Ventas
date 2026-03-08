@@ -488,9 +488,71 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e0653095a4b9f11666ef1df8295c753806564bca",
     "commitName": "fix: Agregado de decimales en las soluciones",
     "commitTimestamp": 1772987360766,
     "testId": 16
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 2,
+    "numTotalTests": 12,
+    "timestamp": 1772988218032,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1772988314892,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1772991276892,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1772991295830,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1772991308654,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1772991379093,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1772991481421,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo de categoria Alimentos",
+    "commitTimestamp": 1772992757932,
+    "testId": 17
   }
 ]

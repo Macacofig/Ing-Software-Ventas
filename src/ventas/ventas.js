@@ -1,6 +1,6 @@
 function calcularTotal(cantidad, precio)
 {
-    return cantidad * precio;
+    return Number((cantidad * precio).toFixed(2));
 }
 
 function calcularTotalImpuesto(total, estado)
@@ -60,4 +60,19 @@ function calcularDescuentos(cantidad, precio) {
   return [Number((total-montoDescuento).toFixed(2)),Number((montoDescuento).toFixed(2))];
 }
 
-export {calcularTotal, calcularTotalImpuesto, calcularDescuentos};
+function calcularCategoria(total,categoria)
+{
+  const categorias = {'Alimentos':{'descuento': 0,'impuesto': 2/100}}
+  let descuentoAplicar;
+  let impuestoAplicar;
+  let totalcompleto;
+  if(categoria === 'Alimentos')
+  {
+      descuentoAplicar = total * categorias['Alimentos']['descuento'];
+      totalcompleto = total - descuentoAplicar;
+      impuestoAplicar = totalcompleto * categorias['Alimentos']['impuesto'];
+      totalcompleto = totalcompleto + impuestoAplicar;
+  }
+  return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];
+}
+export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria};

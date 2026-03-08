@@ -1,14 +1,23 @@
-import { calcularTotal, calcularDescuentos, calcularTotalImpuesto } from "./ventas.js";
+import { calcularTotal, calcularDescuentos, calcularTotalImpuesto, calcularCategoria } from "./ventas.js";
 
 const form = document.getElementById("formulario");
 const cantidad = document.getElementById("cantidad");
 const precio = document.getElementById("precio");
 const region = document.getElementById("estados");
+const categoria = document.getElementById("categorias");
+
 const precioNeto = document.getElementById("precioNeto");
+
 const totalConDescuento = document.getElementById("totalConDescuento");
 const totalConImpuesto = document.getElementById("totalConImpuesto");
+const totalConDescuentocategoria = document.getElementById("totalConDescuentocategoria");
+const totalConImpuestocategoria = document.getElementById("totalConImpuestocategoria");
+
 const tipoDescuento = document.getElementById("tipoDescuento");
 const tipoImpuesto = document.getElementById("tipoImpuesto");
+const tipoDescuentocategoria = document.getElementById("tipoDescuentocategoria");
+const tipoImpuestocategoria = document.getElementById("tipoImpuestocategoria");
+
 const total = document.getElementById("total");
 
 form.addEventListener("submit", (event) => {
@@ -17,6 +26,8 @@ form.addEventListener("submit", (event) => {
   const cantidadPresenter = parseFloat(cantidad.value);
   const precioPresenter = parseFloat(precio.value);
   const regionPresenter = region.value;
+  const categoriaPresenter = categoria.value;
+
   // precio neto
   const neto = calcularTotal(cantidadPresenter, precioPresenter);
   precioNeto.textContent = neto;
@@ -27,6 +38,10 @@ form.addEventListener("submit", (event) => {
 
   const totalyimpuestos = calcularTotalImpuesto(totalydescuento[0],regionPresenter);
   totalConImpuesto.textContent = totalyimpuestos[1];
+
+  const totalcategoria = calcularCategoria(totalyimpuestos[0], categoriaPresenter);
+  totalConDescuentocategoria.textContent = totalcategoria[1];
+  totalConImpuestocategoria.textContent = totalcategoria[2];
 
   // mostrar porcentaje
   if (neto <= 1000){
@@ -49,25 +64,31 @@ form.addEventListener("submit", (event) => {
   }
 
   //mostrar porcentaje para impuestos
-  if (regionPresenter == 'UT')
+  if (regionPresenter === 'UT')
   {
     tipoImpuesto.textContent = "6.25%";
   }
-  if (regionPresenter == 'NV')
+  if (regionPresenter === 'NV')
   {
     tipoImpuesto.textContent = "8%";
   }
-  if (regionPresenter == 'TX')
+  if (regionPresenter === 'TX')
   {
     tipoImpuesto.textContent = "6.25%";
   }
-  if (regionPresenter == 'AL')
+  if (regionPresenter === 'AL')
   {
     tipoImpuesto.textContent = "4%";
   }
-    if (regionPresenter == 'CA')
+  if (regionPresenter === 'CA')
   {
     tipoImpuesto.textContent = "8.25%";
   }
-  total.textContent = totalyimpuestos[0];
+  //mostrar catgoria
+  if(categoriaPresenter === 'Alimentos')
+  {
+    tipoDescuentocategoria.textContent = "0%";
+    tipoImpuestocategoria.textContent = "2%";
+  }
+  total.textContent = totalcategoria[0];
 });
