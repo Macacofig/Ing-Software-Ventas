@@ -20,27 +20,27 @@ form.addEventListener("submit", (event) => {
   precioNeto.textContent = neto;
 
   // total con descuento
-  const conDescuento = calcularDescuentos(cantidadPresenter, precioPresenter);
-  totalConDescuento.textContent = conDescuento;
+  const totalydescuento = calcularDescuentos(cantidadPresenter, precioPresenter);
+  totalConDescuento.textContent = totalydescuento[1];
 
   // mostrar porcentaje
-  if (cantidadPresenter <= 1000){
+  if (neto <= 1000){
     tipoDescuento.textContent = "0%";
   }
-  if (cantidadPresenter >= 1000 && cantidadPresenter <= 2999) {
+  if (neto >= 1000 && neto <= 2999) {
     tipoDescuento.textContent = "3%";
   } 
-  if (cantidadPresenter >= 3000 && cantidadPresenter <= 6999){
+  if (neto >= 3000 && neto <= 6999){
     tipoDescuento.textContent = "5%";
   }
-  if (cantidadPresenter >= 7000 && cantidadPresenter <= 9999){
+  if (neto >= 7000 && neto <= 9999){
     tipoDescuento.textContent = "7%";
   }
-  if (cantidadPresenter >= 10000 && cantidadPresenter <= 29999){
+  if (neto >= 10000 && neto <= 29999){
     tipoDescuento.textContent = "10%";
   }
-  if (cantidadPresenter >= 30000){
+  if (neto >= 30000){
     tipoDescuento.textContent = "15%";
   }
-  total.textContent = conDescuento;
+  total.textContent = totalydescuento[0];
 });

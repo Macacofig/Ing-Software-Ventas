@@ -336,9 +336,39 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0bec821bd019033553ae89bd6e3f3b479402e0cc",
     "commitName": "feat: implementacion de descuento 15% >30000",
     "commitTimestamp": 1772916696261,
     "testId": 8
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1772951613536,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 5,
+    "numTotalTests": 7,
+    "timestamp": 1772952769739,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1772952815680,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: arreglo para la funcion descuento",
+    "commitTimestamp": 1772954169634,
+    "testId": 9
   }
 ]

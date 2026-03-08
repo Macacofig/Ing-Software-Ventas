@@ -152,18 +152,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0bec821bd019033553ae89bd6e3f3b479402e0cc",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-07T20:51:35.000Z",
       "message": "feat: implementacion de descuento 15% >30000",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/0bec821bd019033553ae89bd6e3f3b479402e0cc"
     },
     "stats": {
       "total": 13,
       "additions": 11,
       "deletions": 2,
       "date": "2026-03-07"
+    },
+    "coverage": 100,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T07:16:08.000Z",
+      "message": "fix: arreglo para la funcion descuento",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 21,
+      "deletions": 21,
+      "date": "2026-03-08"
     },
     "coverage": 100,
     "test_count": 7,

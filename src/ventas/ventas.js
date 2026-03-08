@@ -20,28 +20,28 @@ function calcularDescuentos(cantidad, precio) {
   const total = cantidad * precio;
   let descuento = 0;
 
-  if (cantidad >= 1000 && cantidad <= 2999) {
+  if (total >= 1000 && total <= 2999) {
     descuento = 0.03;
   }
 
-  if(cantidad >= 3000 && cantidad <= 6999) {
+  if(total >= 3000 && total <= 6999) {
     descuento = 0.05;
   }
 
-  if(cantidad >= 7000 && cantidad <= 9999) {
+  if(total >= 7000 && total <= 9999) {
     descuento = 0.07;
   }
 
-  if(cantidad >= 10000 && cantidad <= 29999) {
+  if(total >= 10000 && total <= 29999) {
     descuento = 0.10;
   }
 
-  if(cantidad >= 30000) {
+  if(total >= 30000) {
     descuento = 0.15;
   }
 
   const montoDescuento = total * descuento;
-  return total - montoDescuento;
+  return [parseInt(total-montoDescuento),parseInt(montoDescuento)];
 }
 
 export {calcularTotal, calcularTotalImpuesto, calcularDescuentos};
