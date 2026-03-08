@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9e325e60601c257837eee426f29e5e6a3879002b",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T08:56:24.000Z",
       "message": "feat: Calculo con impuesto AL",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/9e325e60601c257837eee426f29e5e6a3879002b"
     },
     "stats": {
       "total": 14,
@@ -262,6 +262,25 @@
     },
     "coverage": 100,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T09:00:13.000Z",
+      "message": "feat: Calculo con impuesto CA",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

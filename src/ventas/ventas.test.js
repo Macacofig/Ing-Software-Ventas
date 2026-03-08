@@ -17,6 +17,9 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar 4160 al ingresar cantidad = 40, precio = 100, estado = AL', () => {
     expect(calcularTotalImpuesto(4000,'AL')).toEqual([4160,160]);
   });
+  it('Deberia mostrar 16237 al ingresar cantidad = 150, precio = 100, estado = CA', () => {
+    expect(calcularTotalImpuesto(15000,'CA')).toEqual([16237,1237]);
+  });
   /*-----DESCUENTOS-----*/
   it('Deberia mostrar total con un descuento del 3% cantidad >= 1000 <= 2999', () => {
     expect(calcularDescuentos(100,15)).toEqual([1455,45]);
