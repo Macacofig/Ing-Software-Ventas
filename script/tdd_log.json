@@ -660,9 +660,39 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "47c0a39c88208a9dfe4e05543803c8d30c08f0c9",
     "commitName": "feat: Calculo de categoria Varios",
     "commitTimestamp": 1772997628654,
     "testId": 22
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1772997765044,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1772997947550,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1772998001006,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: Acotacion de codigo, para mejor entendimiento",
+    "commitTimestamp": 1772998114767,
+    "testId": 23
   }
 ]

@@ -6,7 +6,9 @@ function calcularTotal(cantidad, precio)
 function calcularTotalImpuesto(total, estado)
 {
     const estados = {'UT': 6.65/100, 'NV': 8/100, "TX": 6.25/100, "AL": 4/100, "CA": 8.25/100}
-    let porcentajeimpuesto = 0;
+    let porcentajeimpuesto;
+    porcentajeimpuesto = estados[estado]
+    /*
     if(estado === 'UT')
     {
       porcentajeimpuesto = estados['UT']
@@ -27,6 +29,7 @@ function calcularTotalImpuesto(total, estado)
     {
       porcentajeimpuesto = estados['CA']
     }
+    */
     let calc = total * porcentajeimpuesto
     let totalconimpuesto = total + calc;
     return [Number((totalconimpuesto).toFixed(2)),Number((calc).toFixed(2))] ;
@@ -74,6 +77,7 @@ function calcularCategoria(total,categoria)
   let descuentoAplicar;
   let impuestoAplicar;
   let totalcompleto;
+  /*
   if(categoria === 'Alimentos')
   {
     descuentoAplicar = total * categorias['Alimentos']['descuento'];
@@ -122,7 +126,13 @@ function calcularCategoria(total,categoria)
     totalcompleto = total - descuentoAplicar;
     impuestoAplicar = totalcompleto * categorias['Varios']['impuesto'];
     totalcompleto = totalcompleto + impuestoAplicar;
-  }
+  } 
+  */
+  descuentoAplicar = total * categorias[categoria]['descuento'];
+  totalcompleto = total - descuentoAplicar;
+  impuestoAplicar = totalcompleto * categorias[categoria]['impuesto'];
+  totalcompleto = totalcompleto + impuestoAplicar;
+
   return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];
 }
 export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria};
