@@ -646,9 +646,23 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d1802cdfb122de4c7682e74d5eac19042c433242",
     "commitName": "feat: Calculo de categoria Vestimenta",
     "commitTimestamp": 1772997536883,
     "testId": 21
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1772997588741,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo de categoria Varios",
+    "commitTimestamp": 1772997628654,
+    "testId": 22
   }
 ]

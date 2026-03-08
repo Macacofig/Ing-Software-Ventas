@@ -68,7 +68,8 @@ function calcularCategoria(total,categoria)
     'Material de escritorio': {'descuento': 0,'impuesto': 1.5/100},
     'Muebles': {'descuento': 3/100,'impuesto': 0},
     'Electronicos': {'descuento': 4/100,'impuesto': 1/100},
-    'Vestimenta': {'descuento': 2/100,'impuesto': 0}
+    'Vestimenta': {'descuento': 2/100,'impuesto': 0},
+    'Varios': {'descuento': 0,'impuesto': 0},
   }
   let descuentoAplicar;
   let impuestoAplicar;
@@ -113,6 +114,13 @@ function calcularCategoria(total,categoria)
     descuentoAplicar = total * categorias['Vestimenta']['descuento'];
     totalcompleto = total - descuentoAplicar;
     impuestoAplicar = totalcompleto * categorias['Vestimenta']['impuesto'];
+    totalcompleto = totalcompleto + impuestoAplicar;
+  }
+  if(categoria === 'Varios')
+  {
+    descuentoAplicar = total * categorias['Varios']['descuento'];
+    totalcompleto = total - descuentoAplicar;
+    impuestoAplicar = totalcompleto * categorias['Varios']['impuesto'];
     totalcompleto = totalcompleto + impuestoAplicar;
   }
   return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];

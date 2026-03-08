@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d1802cdfb122de4c7682e74d5eac19042c433242",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T19:18:56.000Z",
       "message": "feat: Calculo de categoria Vestimenta",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/d1802cdfb122de4c7682e74d5eac19042c433242"
     },
     "stats": {
       "total": 18,
@@ -414,6 +414,25 @@
     },
     "coverage": 100,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T19:20:27.000Z",
+      "message": "feat: Calculo de categoria Varios",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 18,
+      "deletions": 2,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
   }

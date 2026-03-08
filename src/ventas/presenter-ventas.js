@@ -110,5 +110,10 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "2%";
     tipoImpuestocategoria.textContent = "0%";
   }
+  if(categoriaPresenter === 'Varios')
+  {
+    tipoDescuentocategoria.textContent = "0%";
+    tipoImpuestocategoria.textContent = "0%";
+  }
   total.textContent = totalcategoria[0];
 });
