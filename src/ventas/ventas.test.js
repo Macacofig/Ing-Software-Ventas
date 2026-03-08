@@ -52,4 +52,8 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un calculo de Electronicos totalingresado', () => {
     expect(calcularCategoria(2000,'Electronicos')).toEqual([1939.2,80,19.2]);
   });
+  it('Deberia mostrar total con un calculo de Vestimenta totalingresado', () => {
+    expect(calcularCategoria(2000,'Vestimenta')).toEqual([1960,40,0]);
+  });
+  
 });

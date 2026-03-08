@@ -105,5 +105,10 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "4%";
     tipoImpuestocategoria.textContent = "1%";
   }
+  if(categoriaPresenter === 'Vestimenta')
+  {
+    tipoDescuentocategoria.textContent = "2%";
+    tipoImpuestocategoria.textContent = "0%";
+  }
   total.textContent = totalcategoria[0];
 });
