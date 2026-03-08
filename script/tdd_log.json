@@ -812,9 +812,23 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0115afda96b7ca7e6d604fd542c90a6c33144379",
     "commitName": "feat: Calculo del peso volumetrico 21-40",
     "commitTimestamp": 1773005740095,
     "testId": 26
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1773005794730,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo del peso volumetrico 41-80",
+    "commitTimestamp": 1773005806183,
+    "testId": 27
   }
 ]

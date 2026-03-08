@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0115afda96b7ca7e6d604fd542c90a6c33144379",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-08T21:35:39.000Z",
       "message": "feat: Calculo del peso volumetrico 21-40",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/0115afda96b7ca7e6d604fd542c90a6c33144379"
     },
     "stats": {
       "total": 9,
@@ -509,6 +509,25 @@
     },
     "coverage": 100,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-08T21:36:45.000Z",
+      "message": "feat: Calculo del peso volumetrico 41-80",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

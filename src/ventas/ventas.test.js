@@ -69,4 +69,7 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un calculo con peso 21 a 40', () => {
     expect(calcularPesoVolumetrico(2000,20,21)).toEqual([2100,100]);
   });
+  it('Deberia mostrar total con un calculo con peso 41 a 80', () => {
+    expect(calcularPesoVolumetrico(2000,20,41)).toEqual([2120,120]);
+  });
 });
