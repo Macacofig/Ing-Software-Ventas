@@ -5,10 +5,12 @@ describe('Sistema de ventas', () => {
     expect(calcularTotal(100,3)).toEqual(300);
   });
   /*------IMPUESTOS------*/
-  it('Deberia mostrar al ingresar cantidad = 400, precio = 100 y estado = UT', () => {
-    expect(calcularTotalImpuesto(4000,'UT')).toEqual(4266);
+  it('Deberia mostrar 4266 al ingresar cantidad = 400, precio = 100 y estado = UT', () => {
+    expect(calcularTotalImpuesto(4000,'UT')).toEqual([4266,266]);
   });
-  
+  it('Deberia mostrar 8640 al ingresar  cantidad = 400, precio = 100 y estado = NV', () => {
+    expect(calcularTotalImpuesto(8000,'NV')).toEqual([8640,640]);
+  });
   /*-----DESCUENTOS-----*/
   it('Deberia mostrar total con un descuento del 3% cantidad >= 1000 <= 2999', () => {
     expect(calcularDescuentos(100,15)).toEqual([1455,45]);

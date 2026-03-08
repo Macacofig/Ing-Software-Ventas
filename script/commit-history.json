@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d11ea3af4d3e6dd4817c316887fc47cfdb887ac1",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T08:33:38.000Z",
       "message": "style: Visual para impuesto UT",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/d11ea3af4d3e6dd4817c316887fc47cfdb887ac1"
     },
     "stats": {
       "total": 28,
@@ -207,5 +207,24 @@
     "test_count": 7,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T08:39:35.000Z",
+      "message": "feat: Calculo con impuesto NV",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 18,
+      "deletions": 5,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

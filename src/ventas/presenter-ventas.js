@@ -47,9 +47,15 @@ form.addEventListener("submit", (event) => {
   if (neto >= 30000){
     tipoDescuento.textContent = "15%";
   }
+
+  //mostrar porcentaje para impuestos
   if (regionPresenter == 'UT')
   {
     tipoImpuesto.textContent = "6.25%";
+  }
+  if (regionPresenter == 'NV')
+  {
+    tipoImpuesto.textContent = "8%";
   }
   total.textContent = totalyimpuestos[0];
 });
