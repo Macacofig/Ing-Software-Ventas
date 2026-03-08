@@ -550,9 +550,23 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cf343bd14be2ab76241a5adb45554abb13148e48",
     "commitName": "feat: Calculo de categoria Alimentos",
     "commitTimestamp": 1772992757932,
     "testId": 17
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1772992973691,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo de categoria Bebidas Alcoholicas",
+    "commitTimestamp": 1772993176889,
+    "testId": 18
   }
 ]

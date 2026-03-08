@@ -323,12 +323,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "cf343bd14be2ab76241a5adb45554abb13148e48",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T17:59:17.000Z",
       "message": "feat: Calculo de categoria Alimentos",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/cf343bd14be2ab76241a5adb45554abb13148e48"
     },
     "stats": {
       "total": 91,
@@ -338,6 +338,25 @@
     },
     "coverage": 100,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-08T18:06:16.000Z",
+      "message": "feat: Calculo de categoria Bebidas Alcoholicas",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 21,
+      "deletions": 2,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

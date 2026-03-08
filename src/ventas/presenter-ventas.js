@@ -90,5 +90,10 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "0%";
     tipoImpuestocategoria.textContent = "2%";
   }
+  if(categoriaPresenter === 'Bebidas alcoholicas')
+  {
+    tipoDescuentocategoria.textContent = "7%";
+    tipoImpuestocategoria.textContent = "0%";
+  }
   total.textContent = totalcategoria[0];
 });

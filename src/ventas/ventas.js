@@ -62,7 +62,10 @@ function calcularDescuentos(cantidad, precio) {
 
 function calcularCategoria(total,categoria)
 {
-  const categorias = {'Alimentos':{'descuento': 0,'impuesto': 2/100}}
+  const categorias = {
+    'Alimentos':{'descuento': 0,'impuesto': 2/100}, 
+    'Bebidas alcoholicas': {'descuento': 7/100,'impuesto': 0}
+  }
   let descuentoAplicar;
   let impuestoAplicar;
   let totalcompleto;
@@ -71,6 +74,13 @@ function calcularCategoria(total,categoria)
       descuentoAplicar = total * categorias['Alimentos']['descuento'];
       totalcompleto = total - descuentoAplicar;
       impuestoAplicar = totalcompleto * categorias['Alimentos']['impuesto'];
+      totalcompleto = totalcompleto + impuestoAplicar;
+  }
+  if(categoria === 'Bebidas alcoholicas')
+  {
+      descuentoAplicar = total * categorias['Bebidas alcoholicas']['descuento'];
+      totalcompleto = total - descuentoAplicar;
+      impuestoAplicar = totalcompleto * categorias['Bebidas alcoholicas']['impuesto'];
       totalcompleto = totalcompleto + impuestoAplicar;
   }
   return [Number((totalcompleto).toFixed(2)),Number((descuentoAplicar).toFixed(2)),Number((impuestoAplicar).toFixed(2))];
