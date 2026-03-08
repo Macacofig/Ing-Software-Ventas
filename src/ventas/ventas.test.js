@@ -8,8 +8,11 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar 4266 al ingresar cantidad = 400, precio = 100 y estado = UT', () => {
     expect(calcularTotalImpuesto(4000,'UT')).toEqual([4266,266]);
   });
-  it('Deberia mostrar 8640 al ingresar  cantidad = 400, precio = 100 y estado = NV', () => {
+  it('Deberia mostrar 8640 al ingresar  cantidad = 80, precio = 100 y estado = NV', () => {
     expect(calcularTotalImpuesto(8000,'NV')).toEqual([8640,640]);
+  });
+  it('Deberia mostrar 850 al ingresar cantidad = 10, precio = 80 y estado = TX', () => {
+    expect(calcularTotalImpuesto(800,'TX')).toEqual([850,50]);
   });
   /*-----DESCUENTOS-----*/
   it('Deberia mostrar total con un descuento del 3% cantidad >= 1000 <= 2999', () => {
