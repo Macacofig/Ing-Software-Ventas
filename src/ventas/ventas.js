@@ -141,10 +141,16 @@ function calcularPesoVolumetrico(total,cantidad,peso)
   let totalpeso;
   let agregado;
   if(peso >= 0 && peso <= 10)
-    {
-      agregado = 0 * cantidad;
-      totalpeso = total + agregado;
-    }
+  {
+    agregado = 0 * cantidad;
+    totalpeso = total + agregado;
+  }
+  if(peso >= 11 && peso <= 20)
+  {
+    agregado = 3.5 * cantidad;
+    totalpeso = total + agregado;
+  }
+
   return [Number((totalpeso).toFixed(2)),Number((agregado).toFixed(2))];
 }
 
