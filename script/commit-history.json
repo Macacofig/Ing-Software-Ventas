@@ -266,17 +266,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7da328a0c8f9d96f467d9f4daef7d6bdca6ca2eb",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-08T09:00:13.000Z",
       "message": "feat: Calculo con impuesto CA",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/7da328a0c8f9d96f467d9f4daef7d6bdca6ca2eb"
     },
     "stats": {
       "total": 14,
       "additions": 13,
       "deletions": 1,
+      "date": "2026-03-08"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-08T15:02:45.000Z",
+      "message": "style: poner como defecto CA en la caja de opciones de estado",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2026-03-08"
     },
     "coverage": 100,

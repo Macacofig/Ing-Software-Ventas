@@ -476,9 +476,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7da328a0c8f9d96f467d9f4daef7d6bdca6ca2eb",
     "commitName": "feat: Calculo con impuesto CA",
     "commitTimestamp": 1772960414634,
     "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: poner como defecto CA en la caja de opciones de estado",
+    "commitTimestamp": 1772982167972,
+    "testId": 15
   }
 ]
