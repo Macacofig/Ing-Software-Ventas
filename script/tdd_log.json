@@ -1002,9 +1002,39 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "93167336fb9b71a62fc59aa6d14c8080ce20a2fa",
     "commitName": "feat: mostrar total con el calculo con tipo especial",
     "commitTimestamp": 1773023841739,
     "testId": 35
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1773025261382,
+    "success": false,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1773025287971,
+    "success": false,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1773025300165,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria)",
+    "commitTimestamp": 1773025863401,
+    "testId": 36
   }
 ]

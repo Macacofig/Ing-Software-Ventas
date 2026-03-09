@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "93167336fb9b71a62fc59aa6d14c8080ce20a2fa",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-09T02:37:19.000Z",
       "message": "feat: mostrar total con el calculo con tipo especial",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/93167336fb9b71a62fc59aa6d14c8080ce20a2fa"
     },
     "stats": {
       "total": 10,
@@ -680,6 +680,25 @@
     },
     "coverage": 100,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-09T03:11:02.000Z",
+      "message": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria)",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 29,
+      "deletions": 5,
+      "date": "2026-03-09"
+    },
+    "coverage": 100,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

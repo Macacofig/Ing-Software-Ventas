@@ -1,4 +1,4 @@
-import {calcularTotal, calcularTotalImpuesto , calcularDescuentos, calcularCategoria, calcularPesoVolumetrico, calculoTipoCliente} from './ventas.js'
+import {calcularTotal, calcularTotalImpuesto , calcularDescuentos, calcularCategoria, calcularPesoVolumetrico, calculoTipoCliente, calculobeneficio} from './ventas.js'
 
 describe('Sistema de ventas', () => {
   it('Deberia mostrar 300 al ingresar cantidad = 100 y precio = 3', () => {
@@ -94,5 +94,10 @@ describe('Sistema de ventas', () => {
   });
   it('Deberia mostrar total con un calculo con tipo especial', () => {
     expect(calculoTipoCliente(2000,'Especial')).toEqual([1970,30]);
+  });
+
+  //mostrar beneficio
+  it('Deberia mostrar total con calculo respecto a cliente especial, neto > 3000 y categoria alimentos', () => {
+    expect(calculobeneficio(2500,'Recurrente',3100,'Alimentos')).toEqual([2400,100]);
   });
 });

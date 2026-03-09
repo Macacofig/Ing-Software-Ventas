@@ -186,4 +186,16 @@ function calculoTipoCliente(total,tipo)
   return [Number((total - descuentotipo).toFixed(2)),Number((descuentotipo).toFixed(2))];
 }
 
-export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria, calcularPesoVolumetrico, calculoTipoCliente};
+function calculobeneficio(total,cliente,neto,categoria)
+{
+  let totalbeneficio;
+  let beneficio;
+  if(cliente === 'Recurrente' && neto > 3000 && categoria === 'Alimentos')
+  {
+    beneficio = 100;
+    totalbeneficio = total - beneficio;
+  }
+  return [Number((totalbeneficio).toFixed(2)),(beneficio)]
+}
+
+export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria, calcularPesoVolumetrico, calculoTipoCliente, calculobeneficio};

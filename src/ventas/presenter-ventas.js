@@ -1,4 +1,4 @@
-import { calcularTotal, calcularDescuentos, calcularTotalImpuesto, calcularCategoria, calcularPesoVolumetrico } from "./ventas.js";
+import { calcularTotal, calcularDescuentos, calcularTotalImpuesto, calcularCategoria, calcularPesoVolumetrico,calculoTipoCliente, calculobeneficio } from "./ventas.js";
 
 const form = document.getElementById("formulario");
 const cantidad = document.getElementById("cantidad");
@@ -16,7 +16,7 @@ const totalConDescuentocategoria = document.getElementById("totalConDescuentocat
 const totalConImpuestocategoria = document.getElementById("totalConImpuestocategoria");
 const totalpesovolumetrico = document.getElementById("totalpesovolumetrico");
 const totalTipoCliente = document.getElementById("totalTipoCliente");
-
+const totalbeneficio = document.getElementById("totalbeneficio");
 
 const tipoDescuento = document.getElementById("tipoDescuento");
 const tipoImpuesto = document.getElementById("tipoImpuesto");
@@ -58,6 +58,8 @@ form.addEventListener("submit", (event) => {
   const totalcliente =calculoTipoCliente(totalypeso[0],clientePresenter);
   totalTipoCliente.textContent = totalcliente[1];
 
+  const totalbeneficiocalculado = calculobeneficio(totalcliente[0],clientePresenter,neto,categoriaPresenter);
+  totalbeneficio.textContent = totalbeneficiocalculado[1];
   // mostrar porcentaje
   if (neto <= 1000){
     tipoDescuento.textContent = "0%";
@@ -149,5 +151,5 @@ form.addEventListener("submit", (event) => {
     tipoCliente.textContent = "1.5%";
   }
 
-  total.textContent = totalcliente[0];
+  total.textContent = totalbeneficiocalculado[0];
 });
