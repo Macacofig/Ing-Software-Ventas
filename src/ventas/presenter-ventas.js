@@ -144,6 +144,10 @@ form.addEventListener("submit", (event) => {
   {
     tipoCliente.textContent = "1%";
   }
+  if(clientePresenter === 'Especial')
+  {
+    tipoCliente.textContent = "1.5%";
+  }
 
   total.textContent = totalcliente[0];
 });

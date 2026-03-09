@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d8399e7f7a2e94ae0956675559d0e244f35a00b4",
     "author": "Nataly",
     "commit": {
       "date": "2026-03-09T02:34:31.000Z",
       "message": "feat: mostrar total con el calculo con tipo antiguo recurrente",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/d8399e7f7a2e94ae0956675559d0e244f35a00b4"
     },
     "stats": {
       "total": 11,
@@ -661,6 +661,25 @@
     },
     "coverage": 100,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-09T02:37:19.000Z",
+      "message": "feat: mostrar total con el calculo con tipo especial",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 100,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }
