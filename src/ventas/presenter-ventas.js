@@ -153,3 +153,56 @@ form.addEventListener("submit", (event) => {
 
   total.textContent = totalbeneficiocalculado[0];
 });
+
+//controles de inputs
+
+//control de caracteres especiales
+const inputs = document.querySelectorAll('input[type="number"]');
+
+inputs.forEach(input => {
+  input.addEventListener("keydown", function(e) {
+    if (e.key === "e" || e.key === "E" || e.key === "-" || e.key === "+" || e.key === ",") {
+      e.preventDefault();
+    }
+  });
+});
+
+// control de no colocar un punto en cantidad
+const cantidadinput = document.getElementById("cantidad");
+
+cantidadinput.addEventListener("keydown", function(e) {
+  if (e.key === ".") {
+    e.preventDefault();
+  }
+});
+
+// control de . antes de un numero en decimales
+const precioinput = document.getElementById("precio");
+const pesoinput = document.getElementById("pesovolumetrico");
+
+function controlarDecimal(input){
+
+  input.addEventListener("keydown", function(e){
+
+    if (e.key === ".") {
+
+      const valor = this.value;
+
+      // no permitir punto si está vacío
+      if (valor.length === 0) {
+        e.preventDefault();
+      }
+
+      // no permitir más de un punto
+      if (valor.includes(".")) {
+        e.preventDefault();
+      }
+
+    }
+
+  });
+
+}
+
+controlarDecimal(precioinput);
+controlarDecimal(pesoinput);

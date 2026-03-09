@@ -703,17 +703,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ab6ea37c1a42ad8697fba8f8374cf3c5cf29c3f4",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-09T03:14:03.000Z",
       "message": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria) parte 2",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/ab6ea37c1a42ad8697fba8f8374cf3c5cf29c3f4"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 100,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-09T03:30:22.000Z",
+      "message": "feat: control de inputs del usuario",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 61,
+      "additions": 57,
+      "deletions": 4,
       "date": "2026-03-09"
     },
     "coverage": 100,

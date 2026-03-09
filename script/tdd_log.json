@@ -1054,9 +1054,15 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab6ea37c1a42ad8697fba8f8374cf3c5cf29c3f4",
     "commitName": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria) parte 2",
     "commitTimestamp": 1773026044703,
     "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: control de inputs del usuario",
+    "commitTimestamp": 1773027023695,
+    "testId": 38
   }
 ]
