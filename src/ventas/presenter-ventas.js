@@ -6,6 +6,7 @@ const precio = document.getElementById("precio");
 const region = document.getElementById("estados");
 const categoria = document.getElementById("categorias");
 const pesovolumetrico = document.getElementById("pesovolumetrico");
+const cliente = document.getElementById("cliente");
 
 const precioNeto = document.getElementById("precioNeto");
 
@@ -14,11 +15,14 @@ const totalConImpuesto = document.getElementById("totalConImpuesto");
 const totalConDescuentocategoria = document.getElementById("totalConDescuentocategoria");
 const totalConImpuestocategoria = document.getElementById("totalConImpuestocategoria");
 const totalpesovolumetrico = document.getElementById("totalpesovolumetrico");
+const totalTipoCliente = document.getElementById("totalTipoCliente");
+
 
 const tipoDescuento = document.getElementById("tipoDescuento");
 const tipoImpuesto = document.getElementById("tipoImpuesto");
 const tipoDescuentocategoria = document.getElementById("tipoDescuentocategoria");
 const tipoImpuestocategoria = document.getElementById("tipoImpuestocategoria");
+const tipoCliente = document.getElementById("tipoCliente");
 
 const total = document.getElementById("total");
 
@@ -30,6 +34,7 @@ form.addEventListener("submit", (event) => {
   const regionPresenter = region.value;
   const categoriaPresenter = categoria.value;
   const pesovolumetricoPresenter = parseFloat(pesovolumetrico.value);
+  const clientePresenter = cliente.value;
 
   // precio neto
   const neto = calcularTotal(cantidadPresenter, precioPresenter);
@@ -49,6 +54,10 @@ form.addEventListener("submit", (event) => {
   const totalypeso = calcularPesoVolumetrico(totalcategoria[0],cantidadPresenter, pesovolumetricoPresenter);
   totalpesovolumetrico.textContent = totalypeso[1];
   total.textContent = totalypeso[0];
+
+  const totalcliente =calculoTipoCliente(totalypeso[0],clientePresenter);
+  totalTipoCliente.textContent = totalcliente[1];
+
   // mostrar porcentaje
   if (neto <= 1000){
     tipoDescuento.textContent = "0%";
@@ -121,5 +130,11 @@ form.addEventListener("submit", (event) => {
     tipoDescuentocategoria.textContent = "0%";
     tipoImpuestocategoria.textContent = "0%";
   }
-  total.textContent = totalcategoria[0];
+
+  //mostrar cliente
+  if(clientePresenter === 'Normal')
+  {
+    tipoCliente.textContent = "0%";
+  }
+  total.textContent = totalcliente[0];
 });

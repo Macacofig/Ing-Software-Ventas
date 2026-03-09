@@ -51,6 +51,13 @@
     <input type="text" id="pesovolumetrico" name="pesovolumetrico">
   </div>
 
+  <div class="campo">
+    <label>Tipo Cliente:</label>
+    <select id="cliente" name="cliente">
+      <option value="Normal">Normal</option> 
+    </select>
+  </div>
+
   <div class="boton">
     <button type="submit" class="calcular" id="botonCalcular">Calcular</button>
   </div>
@@ -84,6 +91,11 @@
     <div class="resultado">
       <span>Peso Volumetrico :
       <span id="totalpesovolumetrico">0</span></span> 
+    </div>
+
+    <div class="resultado">
+      <span>Descuento Tipo Cliente  (<span id="tipoCliente">0%</span>) :
+      <span id="totalTipoCliente">0</span></span>
     </div>
     
     <div class="resultado total">

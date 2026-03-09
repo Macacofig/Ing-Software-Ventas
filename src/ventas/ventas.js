@@ -178,4 +178,11 @@ function calcularPesoVolumetrico(total,cantidad,peso)
   return [Number((totalpeso).toFixed(2)),Number((agregado).toFixed(2))];
 }
 
-export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria, calcularPesoVolumetrico};
+function calculoTipoCliente(total,tipo)
+{
+  const tipos = {'Normal': 0}
+  let descuentotipo = total * tipos[tipo];
+  return [Number((total - descuentotipo).toFixed(2)),Number((descuentotipo).toFixed(2))];
+}
+
+export {calcularTotal, calcularTotalImpuesto, calcularDescuentos, calcularCategoria, calcularPesoVolumetrico, calculoTipoCliente};
