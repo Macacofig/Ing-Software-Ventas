@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "23a1a877cc97efa2a7c1b0393e1250aa4f91b53b",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-09T03:11:02.000Z",
       "message": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria)",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/23a1a877cc97efa2a7c1b0393e1250aa4f91b53b"
     },
     "stats": {
       "total": 34,
@@ -699,6 +699,25 @@
     },
     "coverage": 100,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "omkrfig",
+    "commit": {
+      "date": "2026-03-09T03:14:03.000Z",
+      "message": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria) parte 2",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-03-09"
+    },
+    "coverage": 100,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

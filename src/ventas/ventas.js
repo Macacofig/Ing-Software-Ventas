@@ -195,6 +195,11 @@ function calculobeneficio(total,cliente,neto,categoria)
     beneficio = 100;
     totalbeneficio = total - beneficio;
   }
+  if(cliente === 'Especial' && neto > 7000 && categoria === 'Electronicos')
+  {
+    beneficio = 200;
+    totalbeneficio = total - beneficio;
+  }
   return [Number((totalbeneficio).toFixed(2)),(beneficio)]
 }
 

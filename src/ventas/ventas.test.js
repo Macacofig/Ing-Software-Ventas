@@ -97,7 +97,10 @@ describe('Sistema de ventas', () => {
   });
 
   //mostrar beneficio
-  it('Deberia mostrar total con calculo respecto a cliente especial, neto > 3000 y categoria alimentos', () => {
+  it('Deberia mostrar total con calculo respecto a cliente recurrente, neto > 3000 y categoria alimentos', () => {
     expect(calculobeneficio(2500,'Recurrente',3100,'Alimentos')).toEqual([2400,100]);
+  });
+  it('Deberia mostrar total con calculo respecto a cliente especial, neto > 7000 y categoria electronicos', () => {
+    expect(calculobeneficio(2500,'Especial',7100,'Electronicos')).toEqual([2300,200]);
   });
 });

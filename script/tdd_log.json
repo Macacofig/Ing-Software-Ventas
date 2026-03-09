@@ -1032,9 +1032,31 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "23a1a877cc97efa2a7c1b0393e1250aa4f91b53b",
     "commitName": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria)",
     "commitTimestamp": 1773025863401,
     "testId": 36
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1773025978802,
+    "success": false,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1773026006285,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Calculo benecio segun (Cliente,TotalNeto,Categoria) parte 2",
+    "commitTimestamp": 1773026044703,
+    "testId": 37
   }
 ]
