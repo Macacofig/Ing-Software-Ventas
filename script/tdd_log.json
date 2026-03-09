@@ -920,9 +920,31 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c28562991190b37a2500878c144753d47b29e2d0",
     "commitName": "feat: mostrar total con el calculo con tipo normal",
     "commitTimestamp": 1773022927379,
     "testId": 32
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1773023371986,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1773023520454,
+    "success": true,
+    "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar total con el calculo con tipo recurrente",
+    "commitTimestamp": 1773023548157,
+    "testId": 33
   }
 ]

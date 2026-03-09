@@ -86,4 +86,7 @@ describe('Sistema de ventas', () => {
   it('Deberia mostrar total con un calculo con tipo normal', () => {
     expect(calculoTipoCliente(2000,'Normal')).toEqual([2000,0]);
   });
+  it('Deberia mostrar total con un calculo con tipo recurrente', () => {
+    expect(calculoTipoCliente(2000,'Recurrente')).toEqual([1990,10]);
+  });
 });
