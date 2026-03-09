@@ -942,9 +942,39 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e70146260fcc4ee793f8d60b3e27da48c1d83e5",
     "commitName": "feat: mostrar total con el calculo con tipo recurrente",
     "commitTimestamp": 1773023548157,
     "testId": 33
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1773023581831,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1773023609915,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1773023643961,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar total con el calculo con tipo antiguo recurrente",
+    "commitTimestamp": 1773023673117,
+    "testId": 34
   }
 ]

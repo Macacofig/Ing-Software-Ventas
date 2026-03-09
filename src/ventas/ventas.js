@@ -180,7 +180,7 @@ function calcularPesoVolumetrico(total,cantidad,peso)
 
 function calculoTipoCliente(total,tipo)
 {
-  const tipos = {'Normal': 0, 'Recurrente': 0.5/100};
+  const tipos = {'Normal': 0, 'Recurrente': 0.5/100, 'Antiguo Recurrente': 1/100};
   
   let descuentotipo = total * tipos[tipo];
   return [Number((total - descuentotipo).toFixed(2)),Number((descuentotipo).toFixed(2))];

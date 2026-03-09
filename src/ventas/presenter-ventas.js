@@ -140,5 +140,10 @@ form.addEventListener("submit", (event) => {
   {
     tipoCliente.textContent = "0.5%";
   }
+  if(clientePresenter === 'Antiguo Recurrente')
+  {
+    tipoCliente.textContent = "1%";
+  }
+
   total.textContent = totalcliente[0];
 });
