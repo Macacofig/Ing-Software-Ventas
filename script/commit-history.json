@@ -722,18 +722,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "74d00190e0959c0110d0a2b1f922fb05ba373f6c",
     "author": "omkrfig",
     "commit": {
       "date": "2026-03-09T03:30:22.000Z",
       "message": "feat: control de inputs del usuario",
-      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/74d00190e0959c0110d0a2b1f922fb05ba373f6c"
     },
     "stats": {
       "total": 61,
       "additions": 57,
       "deletions": 4,
       "date": "2026-03-09"
+    },
+    "coverage": 100,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nataly",
+    "commit": {
+      "date": "2026-03-10T02:22:23.000Z",
+      "message": "style: mejoras visuales para presentacion final",
+      "url": "https://github.com/Macacofig/Ing-Software-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 342,
+      "additions": 216,
+      "deletions": 126,
+      "date": "2026-03-10"
     },
     "coverage": 100,
     "test_count": 31,
