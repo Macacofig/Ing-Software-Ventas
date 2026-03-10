@@ -188,8 +188,8 @@ function calculoTipoCliente(total,tipo)
 
 function calculobeneficio(total,cliente,neto,categoria)
 {
-  let totalbeneficio;
-  let beneficio;
+  let totalbeneficio = total;
+  let beneficio = 0;
   if(cliente === 'Recurrente' && neto > 3000 && categoria === 'Alimentos')
   {
     beneficio = 100;

@@ -1060,9 +1060,23 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "74d00190e0959c0110d0a2b1f922fb05ba373f6c",
     "commitName": "feat: control de inputs del usuario",
     "commitTimestamp": 1773027023695,
     "testId": 38
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1773112852545,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Arreglo en visual y control en el beneficio",
+    "commitTimestamp": 1773113613213,
+    "testId": 39
   }
 ]

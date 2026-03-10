@@ -83,7 +83,7 @@ form.addEventListener("submit", (event) => {
   //mostrar porcentaje para impuestos
   if (regionPresenter === 'UT')
   {
-    tipoImpuesto.textContent = "6.25%";
+    tipoImpuesto.textContent = "6.65%";
   }
   if (regionPresenter === 'NV')
   {
