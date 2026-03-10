@@ -1,3 +1,16 @@
+/* --- Variables de Color --- */
+:root {
+  --primary-color: #4f46e5; /* Indigo moderno */
+  --primary-hover: #4338ca;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --success-color: #10b981;
+}
+
+/* --- Reset Básico --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,115 +18,175 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #e6ecf0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  /* Fondo con un degradado sutil */
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* --- Contenedor Principal --- */
 .contenedor {
-  background: #ffffff;
-  width: 360px;
-  padding: 30px 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background: var(--card-bg);
+  width: 100%;
+  max-width: 450px; /* Un poco más ancho para mejor lectura */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 25px;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
-  color: #222222;
-  margin-bottom: 25px;
+  font-size: 28px;
+  color: var(--text-main);
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
+.header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* --- Formulario --- */
 .formulario {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
-.formulario .campo {
+.campo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.formulario label {
+.campo label {
+  font-size: 14px;
   font-weight: 600;
-  color: #555555;
+  color: var(--text-main);
+  margin-left: 4px;
 }
 
-.formulario input,
-.formulario select {
-  width: 140px;
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-align: right;
-  background-color: #fdfdfd;
-  transition: 0.3s;
-}
-
-.formulario select {
-  text-align: left;
-  cursor: pointer;
-}
-
-.formulario input:focus {
-  border-color: #1e90ff;
-  box-shadow: 0 0 5px rgba(30,144,255,0.3);
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--text-main);
+  background-color: #fff;
+  transition: all 0.3s ease;
   outline: none;
 }
 
+/* Efecto al hacer foco en inputs */
+.campo input:focus,
+.campo select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* --- Botón --- */
 .boton {
-  display: flex;
-  justify-content: right;
   margin-top: 10px;
 }
 
 .calcular {
-  width: 40%;
-  padding: 10px 0;
-  background-color: #2379d0;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
   color: #fff;
   font-weight: 600;
-  border: none;
-  border-radius: 10px;
   font-size: 16px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
 }
 
 .calcular:hover {
-  background-color: #187bcd;
   transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.3);
 }
 
+.calcular:active {
+  transform: translateY(0);
+}
 
+/* --- Resultados --- */
 .resultados {
-  margin-top: 25px;
-  width: 100%;
-  border-top: 1.5px solid #eee;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: #f9fafb;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.resultados h3 {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
 }
 
 .resultado {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
-  color: #333333;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--text-main);
+  border-bottom: 1px dashed #e5e7eb;
 }
 
+.resultado:last-child {
+  border-bottom: none;
+}
+
+.resultado .label {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.resultado .valor {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* Estilo especial para el Total Final */
 .resultado.total {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: none;
+}
+
+.resultado.total .label {
+  font-size: 16px;
   font-weight: 700;
-  font-size: 17px;
-  color: #1e90ff;
+  color: var(--primary-color);
+}
+
+.resultado.total .valor {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
 }

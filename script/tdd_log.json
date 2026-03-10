@@ -1074,9 +1074,15 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cbf5faefbba7bc73a09f38e7261bb52e2d9c54f6",
     "commitName": "fix: Arreglo en visual y control en el beneficio",
     "commitTimestamp": 1773113613213,
     "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Merge branch 'main' of https://github.com/Macacofig/Ing-Software-Ventas",
+    "commitTimestamp": 1773113856135,
+    "testId": 40
   }
 ]
